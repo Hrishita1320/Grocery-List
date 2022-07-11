@@ -7,9 +7,10 @@ import { useState, useEffect } from "react";
 import apiRequest from "./apiRequest";
 
 function App() {
-  const API_URL = "http://localhost:3500/items";
+  // const API_URL = "http://localhost:3500/items";
+  const API_URL = "https://stalwart-melba-265645.netlify.app/";
 
-  const [items, setItems] = useState([]);
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('shoppinglist')) || []);
   const [newItem, setNewItem] = useState("");
   const [search, setSearch] = useState("");
   const [fetchError, setFetchError] = useState(null);

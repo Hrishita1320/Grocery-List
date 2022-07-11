@@ -1,13 +1,8 @@
 {
   "items": [
     {
-      "id": 1,
-      "checked": false,
-      "item": "Bread"
-    },
-    {
       "id": 2,
-      "checked": false,
+      "checked": true,
       "item": "Omlet"
     },
     {
